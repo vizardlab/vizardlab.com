@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+	</title>
+
+
+	<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+	<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.demo{
+			height: 100vw;
+			width: 100%;
+		}
+
+		.demo model-viewer{
+			height: 100%;
+			width: 100%;
+		}
+
+		@font-face{
+		src :url(fonts/BebasNeue-Regular.ttf);
+		font-family:BIO;
+
+		}
+
+		*{
+		font-family:BIO ;
+
+		}
+
+
+		
+	</style>
+</head>
+<body>
+	
+	<img align="center" src="Vizardlabogo.png" style="max-width:15%;height:auto;">
+	<h1 align="CENTER">This could be your infrastucture</h1>
+
+	<div class="demo">
+		<model-viewer src="obj\apartment.gltf.glb"  auto-rotate camera-controls ar>
+			<button slot="ar-button" style="background-color: yellow; border-radius: 4px; border: none; position: absolute; top: 16px; right: 16px; ">
+           		Activate AR
+      		</button>
+  		</model-viewer>
+
+	</div>
+	<br>
+	<br>
+	<br>
+	<hr>
+
+	<P>model by <A HREF="https://poly.google.com/view/bGsmc1_k5MB">
+	Sathishkumar Subramani</A></P>
+
+</body>
+</html>
