@@ -1,2 +1,2 @@
 # vizardlab.com
-we build amazing augmented reality apps
+we provide complete branding solutions and build amazing augmented reality apps.
