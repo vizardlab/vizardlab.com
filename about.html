@@ -13,114 +13,166 @@
             margin-bottom: 16px;
             padding: 0 8px;
             }
-
-            /* Display the columns below each other instead of side by side on small screens */
-            @media screen and (max-width: 650px) {
-            .column {
-                width: 100%;
-                display: block;
-            }
-            }
-
-            /* Add some shadows to create a card effect */
-            .card {
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            }
-
-            /* Some left and right padding inside the container */
-            .container {
-            padding: 0 16px;
-            }
-
-            /* Clear floats */
-            .container::after, .row::after {
-            content: "";
-            clear: both;
-            display: table;
-            }
-
-            .title {
-            color: grey;
-            }
-
-            .button {
-            border: none;
-            outline: 0;
-            display: inline-block;
-            padding: 8px;
-            color: white;
-            background-color: #000;
-            text-align: center;
-            cursor: pointer;
-            width: 100%;
-            }
-
-            .button:hover {
-            background-color: #555;
-            }
-
-            .img {
-            display: block;
-            max-width: 100%;
-            height: auto;
-            }
             
+            @font-face{
+                src :url(fonts/BebasNeue-Regular.ttf);
+                font-family:BIO;
+    
+            }
+    
+            .video-container {
+                position:relative;
+                padding-bottom:56.25%;
+                padding-top:30px;
+                margin: 50px;
+    
+                height:0;
+                overflow:hidden;
+            }
+    
+            .video-container iframe, .video-container object, .video-container embed {
+                position:absolute;
+                top:0;
+                left:0;
+                width:100%;
+                height:100%;
+            }
+    
+            h1{
+                font-size:4.5vw;
+    
+            }
+
+            h2{
+                font-size:2.5vw;
+    
+            }
+    
+            #first {
+                padding: 17%;
+                font-family:BIO ;
+    
+            }
+    
+            *{
+                font-family:BIO ;
+            }
+    
             body{
-            background-image: url(cool-background.png);
+    
+                background-image: url(cool-background.png);
+            }
+    
+            /* Style the header with a grey background and some padding */
+            .header {
+              overflow: hidden;
+              padding: 20px 10px;
+            }
+    
+            /* Style the header links */
+            .header a {
+              float: left;
+              color: black;
+              text-align: left;
+              padding: 12px;
+              margin: 5px;
+              text-decoration: none;
+              font-size: 18px;
+              line-height: 25px;
+              border-radius: 4px;
+            }
+    
+            /* Change the background color on mouse-over */
+            .header a:hover {
+              color: black;
+            }
+    
+            /* Style the active/current link*/
+            .header a.active {
+              background-color: dodgerblue;
+              color: white;
+            }
+    
+            /* Float the link section to the right */
+            .header-right {
+              float: right;
+            }
+    
+            /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+            @media screen and (max-width: 500px) {
+              .header a {
+                float: none;
+                display: block;
+                text-align: left;
+              }
+              .header-right {
+                float: none;
+              }
+            }
+    
+            section{
+              width: 100%;
+              height: 100%;
+            }
+
+            #foot{
+		        left: 0;
+  		        bottom: 0;
 		    }
-		
-	    #foot{
-		    left: 0;
-  		    bottom: 0;
-		}
 		
         </style>
     </head>
     <body>
-        <br>
+        <div class="header">
+            <a href="#home" class="logo"><img src="Vizardlabogo.png" style="max-width:10%;height:auto; text-align: left;"></a>
+            <div class="header-right">
+              <a class="active" href="index.html">Home</a>&nbsp;&nbsp;
+              <a class="active" href="index.html#about_us">about us</a>&nbsp;&nbsp;
+              <a class="active" href="about.html">Meet the team</a>&nbsp;&nbsp;
+              <a class="active" href="index.html#contact">contact</a>&nbsp;&nbsp;
+              <a class="active" href="https://vizardlab.github.io/vizardlab.com/PROJECTSPAGE.HTML">SEE IT!</a>
+            </div>
+        </div>
         <br>
         <center>
             <h1>Meet the Vizard Lab team!</h1>
         </center>
-        <br>
-        <br>
-        <br>
         <br>
         <center>
             <div class="card-group">
                 <div class="card">
                 <img class="card-img-top" src="https://media.discordapp.net/attachments/750692224618201088/754725285274058762/trtrtrtrtr.png?width=845&height=632" alt="Viraj">
                     <div class="card-body">
-                        <h5 class="card-title">Viraj Chhajed</h5>
-                        <p class="card-text">CEO and founder of Vizard Lab.</p>
+                        <h5 class="card-title"style="font-family:helvetica neue,helvetica,arial,sans-serif;font-size:20px;">Viraj Chhajed</h5>
+                        <p class="card-text"style="font-family:helvetica neue,helvetica,arial,sans-serif;font-size:20px;">CEO and founder of Vizard Lab.</p>
                     </div>
                 </div>
                 <div class="card"><center>
                 <img src="sajiv.jpg" alt="Sajiv" width="280">
                     <div class="card-body">
-                        <h5 class="card-title">Sajiv Jampani</h5>
-                        <p class="card-text">web developer/collaborator at Vizard Lab.</p>
+                        <h5 class="card-title"style="font-family:helvetica neue,helvetica,arial,sans-serif;font-size:20px;">Sajiv Jampani</h5>
+                        <p class="card-text"style="font-family:helvetica neue,helvetica,arial,sans-serif;font-size:20px;">web developer/collaborator at Vizard Lab.</p>
                     </div></center>
                 </div>
                 <div class="card"><center>
                 <img src="https://media.discordapp.net/attachments/750692224618201088/755077656164433951/me.JPG?width=474&height=632" alt="Xiaofan" width="280">
                     <div class="card-body">
-                        <h5 class="card-title">Xiaofan Gao</h5>
-                        <p class="card-text">web developer/collaborator at Vizard Lab.</p>
+                        <h5 class="card-title"style="font-family:helvetica neue,helvetica,arial,sans-serif;font-size:20px;">Xiaofan Gao</h5>
+                        <p class="card-text"style="font-family:helvetica neue,helvetica,arial,sans-serif;font-size:20px;">web developer/collaborator at Vizard Lab.</p>
                     </div></center>
                 </div>
                 <div class="card"><center>
                 <img src="https://media.discordapp.net/attachments/750692224618201088/754926668447219784/IMG-20200914-WA0002.jpg?width=474&height=632" alt="Tinku" width="280">
                     <div class="card-body">
-                        <h5 class="card-title">Tinku Sharma</h5>
-                        <p class="card-text">AR/VR developer at Vizard Lab.</p>
+                        <h5 class="card-title"style="font-family:helvetica neue,helvetica,arial,sans-serif;font-size:20px;">Tinku Sharma</h5>
+                        <p class="card-text"style="font-family:helvetica neue,helvetica,arial,sans-serif;font-size:20px;">AR/VR developer at Vizard Lab.</p>
                     </div></center>
                 </div>
             </div>
 		<div id="foot">
 		<!--Footer-->
 		<footer style="height:auto; background-color:#F7C201;">
-			<h1>&#169; Made at Vizard Lab &#10084;. </h1>
+			<h2>&#169; Made at Vizard Lab <font color=red>&#10084;</font>. </h2>
 		</footer>
 		</div>
         </center>
