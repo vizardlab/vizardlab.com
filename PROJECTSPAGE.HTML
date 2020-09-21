@@ -1,63 +1,183 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>projects page</title>
+	<head>
+		<title>vizardlab.com</title>
+		<meta charset="utf-8">
+		<meta name="Vizardlab">
+		<meta name="description" content="complete augmented reality and virtual reality solutions.">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta  name="keywords" content="VIZARDLAB, VIZARD LAB, vizardlab, vizartd lab, startup, viraj chhajed, augmented reality, branding, solutions, qr code, qrbranding, 360 degree, image, 3d modelling, website designing, vizardlab.com ">
+		<meta name="author" content="viraj chhajed">
+		
+		<noscript>Your browser does not support JavaScript!</noscript>
+		
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+		<link rel="stylesheet" href="index.css">
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.png"/>
+		
 		<style type="text/css">
-		
-		
+			@font-face{
+				src :url(fonts/BebasNeue-Regular.ttf);
+				font-family:BIO;
 
-		@font-face{
-		src :url(fonts/BebasNeue-Regular.ttf);
-		font-family:BIO;
+			}
 
-		}
 
-		*{
-		font-family:BIO ;
+			.video-container {
+				position:relative;
+				padding-bottom:56.25%;
+				padding-top:30px;
+				margin: 50px;
 
-		}
+				height:0;
+				overflow:hidden;
+			}
 
-		.active {
-	  	background-color: dodgerblue;
-	  	color: white;
-	  	float: center;
-	  	color: black;
-	  	text-align: center;
-	  	padding: 10px;
-	  	margin: 5vw;
-	  	text-decoration: none;
-	  	font-size: 18px;
-	  	line-height: 25px;
-	  	border-radius: 4px;
-		}
+			.video-container iframe, .video-container object, .video-container embed {
+				position:absolute;
+				top:0;
+				left:0;
+				width:100%;
+				height:100%;
+			}
 
-		
+			h1{
+				font-size:7vw;
+				font-family:BIO ;
+			}
 
-	</style>
-</head>
-<body>
-	<a href="https://vizardlab.github.io/vizardlab.com/"><img align="center" src="Vizardlabogo.png" style="max-width:15%;height:auto; padding: 5%"></a>
-	<div style="height: 100%">
-		<h1 align="center">See real estate branding projects</h1>	
+			h2{
+				font-size:2.5vw;
+
+			}
+
+			#first {
+				padding: 17%;
+				font-family:BIO ;
+
+			}
+
+			*{
+				font-family:BIO ;
+			}
+
+			body{
+
+				background-image: url(cool-background.png);
+			}
+
+			/* Style the header with a grey background and some padding */
+			.header {
+			overflow: hidden;
+			padding: 20px 10px;
+			}
+
+			/* Style the header links */
+			.header a {
+			float: left;
+			color: black;
+			text-align: left;
+			padding: 12px;
+			margin: 5px;
+			text-decoration: none;
+			font-size: 18px;
+			line-height: 25px;
+			border-radius: 4px;
+			}
+
+			/* Change the background color on mouse-over */
+			.header a:hover {
+			color: black;
+			}
+
+			/* Style the active/current link*/
+			.header a.active {
+			background-color: dodgerblue;
+			color: white;
+			}
+
+			/* Float the link section to the right */
+			.header-right {
+			float: right;
+			}
+
+			/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+			@media screen and (max-width: 500px) {
+			.header a {
+				float: none;
+				display: block;
+				text-align: left;
+			}
+			.header-right {
+				float: none;
+			}
+			}
+
+			section{
+			width: 100%;
+			height: 100%;
+			}
+
+			
+		</style>
+	</head>
+	<body align="center">
 		<div class="header">
-			<div class="active" align="center">
-				<h1><a href="inside.html">Inside infrastructure AR</a></h1>
-				
-			</div>
-			<div class="active" align="center">
-				<h1><a href="outside.html">outside infrastructure ar</a></h1>
-			</div>
-		
-			<div class="active" align="center">
-				<h1><a href="360image.html">360 degree room</a></h1>
-			</div>
-
-			<div class="active" align="center">
-				<h1><a href="qrbranding.html">qr branding example</a></h1>
+			<a href="index.html" class="logo"><img src="Vizardlabogo.png" style="max-width:10%;height:auto; text-align: left;"></a>
+			<div class="header-right">
+				<a class="active" href="index.html">Home</a>&nbsp;&nbsp;
+				<a class="active" href="aboutus.html">about us</a>&nbsp;&nbsp;
+				<a class="active" href="PROJECTSPAGE.HTML">SEE IT!</a>&nbsp;&nbsp;
+				<a class="active" href="contactus.html">contact</a>&nbsp;&nbsp;
+				<a class="active" href="about.html">Meet the Team</a>
 			</div>
 		</div>
-	</div>
+		<center>
+			<div style="height: 100%">
+				<h1 align="center">See real estate branding projects</h1>	
+				<br>
+				<br>
+				<br>
+				<br>
+				<div>
+					<div class="active" align="center">
+						<h2><a href="inside.html">Inside infrastructure AR</a></h2>
+					</div>
 
-</body>
+					<div class="active" align="center">
+						<h2><a href="outside.html">outside infrastructure ar</a></h2>
+					</div>
+					
+					<div class="active" align="center">
+						<h2><a href="360image.html">360 degree room</a></h2>
+					</div>
+
+					<div class="active" align="center">
+						<h2><a href="qrbranding.html">qr branding example</a></h2>
+					</div>
+				</div>
+			</div>
+		</center>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<center>
+			<footer style="height:auto; background-color:#F7C201;">
+				<h2>&#169; Made at Vizard Lab <font color=red>&#10084;</font>. </h2>
+			</footer>
+			</div>
+		</center>
+	</body>
 </html>
