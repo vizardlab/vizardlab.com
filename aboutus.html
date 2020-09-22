@@ -46,11 +46,53 @@
 			  border-radius: 12px;
 			  cursor: pointer;
 			}
+			/* Style the header with a grey background and some padding */
+			.header {
+			overflow: hidden;
+			padding: 20px 10px;
+			}
+
+			/* Style the header links */
+			.header a {
+			float: left;
+			color: black;
+			text-align: left;
+			padding: 12px;
+			margin: 5px;
+			text-decoration: none;
+			font-size: 18px;
+			line-height: 25px;
+			border-radius: 4px;
+			}
+
+			/* Change the background color on mouse-over */
+			.header a:hover {
+			color: black;
+			}
+
+			/* Style the active/current link*/
+			.header a.active {
+			background-color: dodgerblue;
+			color: white;
+			}
+
+			/* Float the link section to the right */
+			.header-right {
+			float: right;
+			}
 		</style>
 	</head>
 
 	<body>
-		<a href="#home" class="logo"><img src="Vizardlabogo.png" style="max-width:10%;height:auto; text-align: left;"></a>
+		<div class="header">
+		<a href="index.html" class="logo"><img src="Vizardlabogo.png" style="max-width:10%;height:auto; text-align: left;"></a>
+		<div class="header-right">
+			<a class="active" href="index.html">Home</a>&nbsp;&nbsp;
+			<a class="active" href="aboutus.html">about us</a>&nbsp;&nbsp;
+			<a class="active" href="PROJECTSPAGE.HTML">SEE IT!</a>&nbsp;&nbsp;
+			<a class="active" href="contactus.html">contact</a>&nbsp;&nbsp;
+			<a class="active" href=about.html>Meet the Team</a>
+		</div>
 
 		<center><h1>ABOUT US</h1>
 
