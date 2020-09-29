@@ -132,7 +132,7 @@
 
 		</style>
 	</head>
-	<body>
+	<body align="center">
 		
 		<div class="header">
 			<a href="index.html" class="logo"><img src="Vizardlabogo.png" style="max-width:10%;height:auto; text-align: left;"></a>
@@ -149,8 +149,11 @@
 		<h1 align="center">This could be your infrastucture</h1>
 
 		<div align="center">
-			<model-viewer src="obj\model.glb" style="width: 800px; height: 800px"  camera-controls ar>
-			</model-viewer>
+			<model-viewer src="obj\model.glb"  auto-rotate camera-controls ar>
+				<button slot="ar-button" style="background-color: yellow; border-radius: 4px; border: none; position: absolute; top: 16px; right: 16px; width: 10%; height:10%; ">
+					<h1>Activate AR</h1>
+      				</button>
+  			</model-viewer>
 		</div>
 
 		
