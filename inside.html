@@ -10,8 +10,8 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png"/>
     <title>Vizardlab</title>
-	<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-	<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
     <noscript>Your browser does not support JavaScript!</noscript>
 
@@ -55,8 +55,13 @@
 
 		}
 		
+		body{
+
+			background-image: url(cool-background.png);
+		}
+		
 		footer{
-			position: absolute;
+			position: static;
 			bottom: 0px;
 		}
 
@@ -70,12 +75,12 @@
 
 	<a href="https://vizardlab.github.io/vizardlab.com/"><img align ="center" src="Vizardlabogo.png" style="max-width:15%;height:auto; padding: 5%"></a>
 	<br>
-	<h1 align="CENTER">This is an example of an inside infrastructure of a building</h1>
+	<h1 align="CENTER">Inside infrastructure of a building</h1>
 
 	<div class="demo">
 		<model-viewer src="obj\model.glb" id="reveal" loading="eager" rotate poster="Images/loading.gif" auto-rotate camera-controls ar>
 			<button slot="ar-button" style="background-color: yellow; border-radius: 4px; border: none; position: absolute; top: 16px; right: 16px; ">
-           			<h1>Activate AR</h1>
+				<h4>Activate AR</h4>
       			</button>
   		</model-viewer>
 
