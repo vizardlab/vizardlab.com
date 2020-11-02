@@ -1,2 +1,2 @@
 # vizardlab.com
-We are pioneers in the field of Tech-based interactive Branding. we at VIZARDLAB provide complete augmented reality and virtual reality solutions. We provide one-stop hassle-free AR/VR solutions. We make web, IOS, android and desktop-based AR/VR applications. We also provide all other related services such as website designing, 3d-modelling, social media management, logo designing, video solutions, photography solutions etc. We are a technology + branding company. We specialize in Real Estate branding.
+nothing here
