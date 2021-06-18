@@ -1,0 +1,42 @@
+iframe {
+}
+
+#centered iframe {
+}
+
+.responsivevid {
+  width: 100%;
+  height: 0px;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+
+.responsivevid iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 300px) {
+  .btn.btn-primary.text-center.border.rounded-pill {
+    font-size: 18px;
+    padding: 5%;
+    margin: 5%;
+  }
+}
+
+.btn.btn-primary.text-center.border.rounded-pill {
+}
+
+@media all and (max-width: 500px) {
+  .photo-background {
+    background: url("Mobile responsive virtual tour.png") center / cover no-repeat;
+  }
+}
+
+@media all and (max-width: 300px) {
+  .photo-background {
+    background: url("Mobile responsive AR.png");
+  }
+}
+
